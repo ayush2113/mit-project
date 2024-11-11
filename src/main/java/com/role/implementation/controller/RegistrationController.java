@@ -34,6 +34,6 @@ public class RegistrationController {
 	    public String registerUserAccount(@ModelAttribute("user") 
 	              UserRegisteredDTO registrationDto) {
 	        userService.save(registrationDto);
-	        return "redirect:/login";
+	        return "redirect:/index";
 	    }
 }
